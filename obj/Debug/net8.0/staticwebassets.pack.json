@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AuthenCardUI.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\images\\P1.jpg",
+      "PackagePath": "staticwebassets\\images\\P1.jpg"
+    },
+    {
+      "Id": "D:\\AuthenCardUI\\wwwroot\\images\\P4.png",
+      "PackagePath": "staticwebassets\\images\\P4.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthenCardUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AuthenCardUI.props",
+      "PackagePath": "build\\AuthenCardUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AuthenCardUI.props",
+      "PackagePath": "buildMultiTargeting\\AuthenCardUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AuthenCardUI.props",
+      "PackagePath": "buildTransitive\\AuthenCardUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
