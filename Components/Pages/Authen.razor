@@ -1,8 +1,10 @@
-@page "/ccccc"
+@page "/"
 @using System.Security.Claims
 @using AuthenCardUI.Models
 @using System.Text.Json.Nodes
-@using static System.Net.WebRequestMethods
+@* @using static System.Net.WebRequestMethods *@
+@using AuthenCardUI.Services
+@using System.Net.Http.Json
 @inject HttpClient http
 @rendermode InteractiveServer
 @inject NavigationManager navManager
@@ -26,7 +28,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body class="imagebk" >
+<body  >
 
     <div class="container text-center "  > @*style="border-style: solid;"*@
         <img src="../../images/P4.png" style="width: 200px;" />
@@ -35,76 +37,74 @@
     </div>
     <br />
     <br />
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8" style="border-style: solid;">
-                <div class="col-sm-2" >
-                    <p><b>วันที่รับบริการ</b></p>
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="mb-5">เปิด Authen คนไข้</h1>
+            <Alert @ref="alert" />
+            @if(client == null)
+            {
+                <p>loading...</p>
+            }else
+            {
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">pid</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.pid">
+                    <span class="text-danger">@Errors["pid"]?[0]</span>
                 </div>
-                <div class="col-sm-4">
-                    <input type="email" class="form-control" >
+            </div>
+
+
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">claimType</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.claimType">
+                    <span class="text-danger">@Errors["claimType"]?[0]</span>
                 </div>
-                <div class="col-sm-5">
-                    <div class="col-sm-2"><p><b>เวลา</b></p></div>
-                    <div class="col-sm-5"><input type="email" class="form-control" style="width: 100px;"></div>
-                    <div class="col-sm-2"><p><b>น.</b></p></div>
+            </div>
+
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">mobile</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.mobile">
+                    <span class="text-danger">@Errors["mobile"]?[0]</span>
                 </div>
             </div>
-            <div class="col-sm-4">
-                @* <h3>Column 3</h3>         *@
-                <input type="email" class="form-control">
+
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">correlationId</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.correlationId">
+                    <span class="text-danger">@Errors["correlationId"]?[0]</span>
+                </div>
             </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-4">
-                @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">hn</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.hn">
+                    <span class="text-danger">@Errors["hn"]?[0]</span>
+                </div>
             </div>
-            <div class="col-sm-4">
-                @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+            <div class="row mb-3">
+                <label class="col-md-4 col-form-label">hcode</label>
+                <div class="col-md-8">
+                    <input class="form-control" @bind="ClaimData.hcode">
+                    <span class="text-danger">@Errors["hcode"]?[0]</span>
+                </div>
             </div>
-            <div class="col-sm-4">
-                @* <h3>Column 3</h3>         *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+
+            <div class="row">
+                <div class="offset-md-4 col-md-4 d-grid">
+                    <button class="btn btn-primary" @onclick="SaveClient">เปิดสิทธิ์ authen</button>
+                </div>
+                <div class="col-md-4 d-grid">
+                    <button class="btn btn-primary" @onclick="LoadData">โหลดข้อมูลคนไข้จากบัตรใหม่</button>
+                </div>
             </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-8">
-                @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="col-sm-4">
-                @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-8 ">
-                @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-6">
-                @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="col-sm-6">
-                @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-        </div>
-        <br />
-        <div class="row">
-            <div class="col-sm-12 text-center ">
-                @* <h3>Column 1</h3> *@
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
+        
+        }
         </div>
     </div>
 
@@ -117,7 +117,7 @@
 
     public string pid;
     public string correlationId;
-    public Claim1 ClaimData  = new Claim1();
+    public Claim1 ClaimData = new Claim1();
     private string? InputValue {get; set;}
     public Cid cids {get; set;} = new();
     private Cid2 client = new Cid2();
@@ -142,7 +142,7 @@
         {
             errorMessage = null;
             await LoadDataAsync();
-            client = await http.GetFromJsonAsync<Cid2>("http://localhost:8189/api/smartcard/read?readImageFlag=false");
+            client = await http.GetFromJsonAsync<Cid2>("http://localhost:8189/api/smartcard/read?readImageFlag=false"); //api ของ hos
             patient = await http.GetFromJsonAsync<Patient>("http://localhost:5094/api/Appointment/getDataAuthenObj?_cid="+ client.pid);
             ClaimData.pid = client.pid;
             ClaimData.correlationId = client.correlationId;

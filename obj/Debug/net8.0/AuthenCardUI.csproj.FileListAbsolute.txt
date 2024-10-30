@@ -27,3 +27,8 @@ D:\AuthenCardUI\obj\Debug\net8.0\refint\AuthenCardUI.dll
 D:\AuthenCardUI\obj\Debug\net8.0\AuthenCardUI.pdb
 D:\AuthenCardUI\obj\Debug\net8.0\AuthenCardUI.genruntimeconfig.cache
 D:\AuthenCardUI\obj\Debug\net8.0\ref\AuthenCardUI.dll
+D:\AuthenCardUI\obj\Debug\net8.0\AuthenCardUI.csproj.AssemblyReference.cache
+D:\AuthenCardUI\obj\Debug\net8.0\AuthenCardUI.sourcelink.json
+D:\AuthenCardUI\bin\Debug\net8.0\Blazored.Typeahead.dll
+D:\AuthenCardUI\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\AuthenCardUI\obj\Debug\net8.0\AuthenCa.21B273BF.Up2Date
