@@ -16,5 +16,7 @@ namespace AuthenCardUI.Models
         public string hn {get; set;}
         [Required(ErrorMessage = "จำเป็นต้องกรอกข้อมูลให้ครบ")] 
         public string hcode {get; set;}
+        [Required(ErrorMessage = "จำเป็นต้องกรอกข้อมูลให้ครบ")] 
+        public string name {get; set;}
     }
 }

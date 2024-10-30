@@ -1,13 +1,13 @@
-@page "/ccccc"
+@page "/authenUI"
+
 @using System.Security.Claims
 @using AuthenCardUI.Models
 @using System.Text.Json.Nodes
 @using static System.Net.WebRequestMethods
+@using System.Globalization
 @inject HttpClient http
 @rendermode InteractiveServer
 @inject NavigationManager navManager
-
-
 
 <style>
 
@@ -16,8 +16,7 @@
     }
 </style>
 
-<!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <title>AuthenUI</title>
     <meta charset="utf-8">
@@ -26,31 +25,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body class="imagebk" >
+<body class="imagebk" > -->
 
     <div class="container text-center "  > @*style="border-style: solid;"*@
         <img src="../../images/P4.png" style="width: 200px;" />
-        <h2>โรงพยาบาลสมุทรสาคร</h2>
-        <h3>Samut Sakon Hospital</h3>
+        <h3>โรงพยาบาลสมุทรสาคร</h3>
+        <h4>Samut Sakon Hospital </h4>
     </div>
     <br />
     <br />
     <div class="container">
         <div class="row">
-            <div class="col-sm-8" style="border-style: solid;">
-                <div class="col-sm-2" >
-                    <p><b>วันที่รับบริการ</b></p>
-                </div>
-                <div class="col-sm-4">
-                    <input type="email" class="form-control" >
-                </div>
-                <div class="col-sm-5">
-                    <div class="col-sm-2"><p><b>เวลา</b></p></div>
-                    <div class="col-sm-5"><input type="email" class="form-control" style="width: 100px;"></div>
-                    <div class="col-sm-2"><p><b>น.</b></p></div>
-                </div>
+            <div class="col-sm-2" >
+                <p><b>วันที่รับบริการ</b></p>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-2">
+                <input type="text" class="form-control" @bind="ArticleDate">
+            </div>
+            <div class="col-sm-1"><p><b>เวลา</b></p></div>
+            <div class="col-sm-1"><input type="text" class="form-control"  @bind="ArticleTime"></div>
+            <div class="col-sm-1"><p><b>น.</b></p></div>
+            <div class="col-sm">
                 @* <h3>Column 3</h3>         *@
                 <input type="email" class="form-control">
             </div>
@@ -59,11 +54,11 @@
         <div class="row">
             <div class="col-sm-4">
                 @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" @bind="ClaimData.hn">
             </div>
             <div class="col-sm-4">
                 @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" @bind="ClaimData.name">
             </div>
             <div class="col-sm-4">
                 @* <h3>Column 3</h3>         *@
@@ -74,7 +69,7 @@
         <div class="row">
             <div class="col-sm-8">
                 @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" @bind="ClaimData.pid">
             </div>
             <div class="col-sm-4">
                 @* <h3>Column 2</h3> *@
@@ -108,12 +103,12 @@
         </div>
     </div>
 
-</body>
-</html>
+<!-- </body>
+</html> -->
 
 
 @code {
-    private DateOnly date1 = DateOnly.FromDateTime(DateTime.Now.AddDays(1));
+    private DateOnly date1 = DateOnly.FromDateTime(DateTime.Now.AddDays(0));
 
     public string pid;
     public string correlationId;
@@ -122,11 +117,15 @@
     public Cid cids {get; set;} = new();
     private Cid2 client = new Cid2();
     //private Patient patient = new Patient();
+    string ArticleDate = DateTime.Now.ToString("dd MMMM yyyy");
+    string ArticleTime = DateTime.Now.ToString("HH:mm");
     private Patient patient = new();
     public JsonNode Errors {set; get;} = new JsonObject();
 
     private Alert alert;
     private string errorMessage;
+
+    
 
     @* private async Task<List<Doctor>> GetItemsAsync(string query)
     {
@@ -150,6 +149,7 @@
             ClaimData.mobile = patient.hometel;
             ClaimData.hn = patient.hn;
             ClaimData.hcode = patient.hcode;
+            ClaimData.name = patient.pname+patient.fname+" "+patient.lname;
         }
          catch (HttpRequestException ex) when (ex.StatusCode == System.Net.HttpStatusCode.InternalServerError)
         {

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\AuthenCardUI\\AuthenCardUI.csproj": {}
+    "C:\\AuthenCardUI\\AuthenCardUI.csproj": {}
   },
   "projects": {
-    "D:\\AuthenCardUI\\AuthenCardUI.csproj": {
+    "C:\\AuthenCardUI\\AuthenCardUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\AuthenCardUI\\AuthenCardUI.csproj",
+        "projectUniqueName": "C:\\AuthenCardUI\\AuthenCardUI.csproj",
         "projectName": "AuthenCardUI",
-        "projectPath": "D:\\AuthenCardUI\\AuthenCardUI.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\AuthenCardUI\\obj\\",
+        "projectPath": "C:\\AuthenCardUI\\AuthenCardUI.csproj",
+        "packagesPath": "C:\\Users\\SKH-PC02\\.nuget\\packages\\",
+        "outputPath": "C:\\AuthenCardUI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\SKH-PC02\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

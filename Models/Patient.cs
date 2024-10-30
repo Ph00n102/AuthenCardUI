@@ -6,5 +6,8 @@ namespace AuthenCardUI.Models
         public string hcode { get; set; }
         public string hometel { get; set; }
         public string informtel { get; set; }
+        public string pname { get; set; }
+        public string fname { get; set; }
+        public string lname { get; set; }
     }
 }
