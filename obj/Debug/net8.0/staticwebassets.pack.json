@@ -1,31 +1,31 @@
 {
   "Files": [
     {
-      "Id": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css",
+      "Id": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css",
       "PackagePath": "staticwebassets\\AuthenCardUI.bundle.scp.css"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\app.css",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\favicon.png",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\images\\P1.jpg",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\images\\P1.jpg",
       "PackagePath": "staticwebassets\\images\\P1.jpg"
     },
     {
-      "Id": "C:\\AuthenCardUI\\wwwroot\\images\\P4.png",
+      "Id": "D:\\AuthenCardUI\\wwwroot\\images\\P4.png",
       "PackagePath": "staticwebassets\\images\\P4.png"
     },
     {

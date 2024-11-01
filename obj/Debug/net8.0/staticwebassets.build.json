@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hcfWVWJjGaREbWKQDUvK6KlHg+GPOnp/trygseIBaDE=",
+  "Hash": "Nq7sY07VVTCuTRsCResdssYjOt++1m3aPEUTIoKpAAk=",
   "Source": "AuthenCardUI",
   "BasePath": "_content/AuthenCardUI",
   "Mode": "Default",
@@ -10,17 +10,55 @@
     {
       "Name": "AuthenCardUI\\wwwroot",
       "Source": "AuthenCardUI",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AuthenCardUI.styles.css",
+      "Identity": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.css",
+      "SourceId": "Blazored.Typeahead",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Typeahead",
+      "RelativePath": "blazored-typeahead.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.css"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.js",
+      "SourceId": "Blazored.Typeahead",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\",
+      "BasePath": "_content/Blazored.Typeahead",
+      "RelativePath": "blazored-typeahead.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Administrator\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.js"
+    },
+    {
+      "Identity": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AuthenCardUI.styles.css",
       "SourceId": "AuthenCardUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "AuthenCardUI.styles.css",
       "AssetKind": "All",
@@ -33,13 +71,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AuthenCardUI.styles.css"
+      "OriginalItemSpec": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AuthenCardUI.styles.css"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css",
+      "Identity": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css",
       "SourceId": "AuthenCardUI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "AuthenCardUI.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +90,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css"
+      "OriginalItemSpec": "D:\\AuthenCardUI\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AuthenCardUI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\app.css",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\app.css",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\favicon.png",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\favicon.png",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -131,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\images\\P1.jpg",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\images\\P1.jpg",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "images/P1.jpg",
       "AssetKind": "All",
@@ -150,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\P1.jpg"
     },
     {
-      "Identity": "C:\\AuthenCardUI\\wwwroot\\images\\P4.png",
+      "Identity": "D:\\AuthenCardUI\\wwwroot\\images\\P4.png",
       "SourceId": "AuthenCardUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\AuthenCardUI\\wwwroot\\",
+      "ContentRoot": "D:\\AuthenCardUI\\wwwroot\\",
       "BasePath": "_content/AuthenCardUI",
       "RelativePath": "images/P4.png",
       "AssetKind": "All",
@@ -167,44 +205,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\P4.png"
-    },
-    {
-      "Identity": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.css",
-      "SourceId": "Blazored.Typeahead",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Typeahead",
-      "RelativePath": "blazored-typeahead.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.css"
-    },
-    {
-      "Identity": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.js",
-      "SourceId": "Blazored.Typeahead",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\",
-      "BasePath": "_content/Blazored.Typeahead",
-      "RelativePath": "blazored-typeahead.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\SKH-PC02\\.nuget\\packages\\blazored.typeahead\\4.7.0\\staticwebassets\\blazored-typeahead.js"
     }
   ]
 }
