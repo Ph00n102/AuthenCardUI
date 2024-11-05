@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthenCardUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+77d0fd3b67aee79bb12603b702c7abdd090434f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e4fdeb20833f4eda153e01a9581e0de147f284f")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthenCardUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthenCardUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

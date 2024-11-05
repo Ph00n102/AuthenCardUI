@@ -27,14 +27,80 @@
 </head>
 <body class="imagebk" > -->
 
-    <div class="container text-center "  > @*style="border-style: solid;"*@
+    <!-- <div class="container text-center "  > @*style="border-style: solid;"*@
         <img src="../../images/P4.png" style="width: 200px;" />
         <h3>โรงพยาบาลสมุทรสาคร</h3>
         <h4>Samut Sakon Hospital </h4>
     </div>
-    <br />
-    <br />
+    <br /> -->
     <div class="container">
+    <div class="row">
+        <div class="col-lg-1">
+        </div>
+        <div class="col-lg-10">
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Custom Text Color Utilities</h6>
+                </div>
+                <div class="card-body">
+                    <div class="py-2 bg-gradient-primary">
+                        <div class="row ">
+                            <div class="col-md-2 text-md-right"><p><b>วันที่รับบริการ</b></p></div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" @bind="ArticleDate">
+                            </div>
+                            <div class="col-md-1 text-md-right"><p><b>เวลา</b></p></div>
+                            <div class="col-md-1">
+                                <input type="text" class="form-control"  @bind="ArticleTime">
+                            </div>
+                            <div class="col-md-1 text-md-right"><p><b>น.</b></p></div>
+                             <div class="col-md-2">
+                                <input type="text" class="form-control" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 bg-gradient-secondary ">
+                        <div class="row ">
+                            <div class="col-md-1 text-md-right"><p><b>HN :</b></p></div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" @bind="ClaimData.hn">
+                            </div>
+                            <div class="col-md-2 text-md-right"><p><b>ชื่อ-สกุล :</b></p></div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" @bind="ClaimData.name">
+                            </div>
+                            <div class="col-md-1">
+                                อายุ :
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" @bind="ClaimData.age">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2 bg-gradient-secondary ">
+                        <div class="row ">
+                            <div class="col-md-3 text-md-right"><p><b>เลขประจำตัวประชาชน :</b></p></div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" @bind="ClaimData.pid">
+                            </div>
+                            <div class="col-md-3 text-md-right"><p><b>ชื่อ-สกุล :</b></p></div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" @bind="ClaimData.name">
+                            </div>
+                            <div class="col-md-1">
+                                อายุ :
+                            </div>
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" @bind="ClaimData.age">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-1">
+        </div>
+    </div>
         <div class="row">
             <div class="col-sm-2" >
                 <p><b>วันที่รับบริการ</b></p>
@@ -47,7 +113,7 @@
             <div class="col-sm-1"><p><b>น.</b></p></div>
             <div class="col-sm">
                 @* <h3>Column 3</h3>         *@
-                <input type="email" class="form-control">
+                <input type="text" class="form-control">
             </div>
         </div>
         <br />
@@ -62,7 +128,7 @@
             </div>
             <div class="col-sm-4">
                 @* <h3>Column 3</h3>         *@
-                <input type="text" class="form-control" @bind="ClaimData.birthday">
+                <input type="text" class="form-control" @bind="ClaimData.age">
             </div>
         </div>
         <br />
@@ -73,25 +139,25 @@
             </div>
             <div class="col-sm-4">
                 @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" >
             </div>
         </div>
         <br />
         <div class="row">
             <div class="col-sm-8 ">
                 @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control">
             </div>
         </div>
         <br />
         <div class="row">
             <div class="col-sm-6">
                 @* <h3>Column 1</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" >
             </div>
             <div class="col-sm-6">
                 @* <h3>Column 2</h3> *@
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="text" class="form-control" >
             </div>
         </div>
         <br />
@@ -151,7 +217,7 @@
             ClaimData.hn = patient.hn;
             ClaimData.hcode = patient.hcode;
             ClaimData.name = patient.pname+patient.fname+" "+patient.lname;
-            ClaimData.birthday = patient.birthday;
+            ClaimData.age = patient.age;
 
             @* int year1 = Convert.ToDateTime(patient.birthday).Year;
             DateTime today = DateTime.Today;

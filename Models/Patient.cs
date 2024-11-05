@@ -10,5 +10,6 @@ namespace AuthenCardUI.Models
         public string fname { get; set; }
         public string lname { get; set; }
         public DateOnly? birthday { get; set; }
+        public int age { get; set; }
     }
 }

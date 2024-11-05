@@ -19,6 +19,6 @@ namespace AuthenCardUI.Models
         [Required(ErrorMessage = "จำเป็นต้องกรอกข้อมูลให้ครบ")] 
         public string name {get; set;}
         public DateOnly? birthday { get; set; }
-        public int year1 {get; set;}
+        public int age {get; set;}
     }
 }
